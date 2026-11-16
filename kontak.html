@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak - Portofolio Miranti</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Miranti</h1>
+        <nav>
+            <a href="index.html">Beranda</a>
+            <a href="tentang.html">Tentang</a>
+            <a href="katalog.html">Karya</a>
+            <a href="kontak.html" class="aktif">Kontak</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Hubungi Saya</h2>
+            
+            <div class="kontak-container">
+                <div class="info-kontak">
+                    <h3>Informasi</h3>
+                    <p><strong>Alamat:</strong> Palembang, Sumatera Selatan</p>
+                    <p><strong>Email:</strong> miranti@email.com</p>
+                    <p><strong>WhatsApp:</strong> 081234567890</p>
+                    <p><strong>Instagram:</strong> @miranti_dev</p>
+                </div>
+
+                <div class="form-kontak">
+                    <h3>Kirim Pesan</h3>
+                    <form action="#" method="post">
+                        <label for="nama">Nama Lengkap *</label>
+                        <input type="text" id="nama" name="nama" required>
+
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="hp">Nomor HP *</label>
+                        <input type="tel" id="hp" name="hp" pattern="[0-9]{10,13}" required placeholder="Contoh: 081234567890">
+
+                        <label for="subjek">Pilih Subjek *</label>
+                        <select id="subjek" name="subjek" required>
+                            <option value="">-- Pilih --</option>
+                            <option value="kerjasama">Kerjasama</option>
+                            <option value="tanya">Tanya Jawab</option>
+                            <option value="lainnya">Lainnya</option>
+                        </select>
+
+                        <label for="pesan">Pesan Anda *</label>
+                        <textarea id="pesan" name="pesan" minlength="10" maxlength="500" required placeholder="Tulis pesan Anda..."></textarea>
+
+                        <button type="submit" class="tombol">Kirim Pesan</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Miranti. Semua Hak Dilindungi.</p>
+    </footer>
+</body>
+</html>
